@@ -1,0 +1,38 @@
+{
+  "name": "genpark-waterfall-b2b-lead-enrichment-intent-scoring-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-provider waterfall B2B lead enrichment, technographic profiling & buyer intent scorer.",
+  "author": "genpark",
+  "category": "sales",
+  "tags": [
+    "lead-enrichment",
+    "waterfall-data",
+    "intent-scoring",
+    "b2b-prospecting",
+    "technographics"
+  ],
+  "inputs": {
+    "company_domain": {
+      "type": "string"
+    },
+    "target_persona_title": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "enriched_contacts": {
+      "type": "array"
+    },
+    "technographic_stack": {
+      "type": "array"
+    },
+    "buyer_intent_score": {
+      "type": "number"
+    },
+    "icp_fit_grade": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
